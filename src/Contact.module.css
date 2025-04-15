@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    overflow-y: auto;
+}
+
+
+.s2 {
+    display: block; /* Flex não é necessário para centralização básica */
+    text-align: center; /* Centraliza o texto */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-right: 370px;
+}
+
+.formulario input{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.formulario textarea{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario button{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 300ms ease-in-out;
+}
+
+.formulario button:hover{
+    background-color: black;
+    color: white;
+}
+.mapa {
+    width: 100%;
+    min-height: 3vh; /* Ajuste para preencher corretamente */
+    padding-top: 50px;
+}
+
+.Rede{
+    flex-wrap: wrap;
+    background-color: #212529;
+    height: 90px;
+    margin-top: -70px;
+}
+
+.imagemRede{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vh;
+    margin-top: 13px;
+}
+.instagram{
+    transition: all 300ms ease-in-out;
+}
+.instagram:hover{
+    transform: rotate(360deg);
+}
+
+.youtube{
+    transition: all 300ms ease-in-out;
+}
+
+.youtube:hover{
+    transform: rotate(360deg);
+}
+
+
+/* Centralização para telas maiores */
+@media (min-width: 1000px) {
+    .s2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Garante que a seção ocupe toda a altura da tela */
+        padding-left: 370px;
+    }
+}
